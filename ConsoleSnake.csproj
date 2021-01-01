@@ -50,6 +50,7 @@
     <Compile Include="Drawable.cs" />
     <Compile Include="Enemy.cs" />
     <Compile Include="FieldRenderer.cs" />
+    <Compile Include="Floor.cs" />
     <Compile Include="Input.cs" />
     <Compile Include="MoverRenderer.cs" />
     <Compile Include="Player.cs" />

@@ -8,20 +8,20 @@ namespace ConsoleSnake
 {
     abstract class Renderer : SnakeGame
     {
-        // Generic string drawable. During the game loop the contents of
-        // this should repeatedly change depending on what is to be
-        // drawn. It could be the walls, it could be the floor, it 
-        // could be a single mover. Whatev. This array can hold all of these.
-        // Generic instance.
-        
-        private Drawable<string> _drawableObjects = new Drawable<string>();          
-        private CoordinatePair<int, int> _drawableLocation = new CoordinatePair<int, int>();
+        private FieldRenderer _fieldrenderer;
+        //private Drawable<string> _drawableObjects;          
+        //private CoordinatePair<int, int> _coordinatePair;
 
-        public 
+        //public Drawable<string> DrawableObject
 
-        public Renderer()
-        {
+        public abstract FieldRenderer FieldRenderer { get; set; }
+        public abstract Drawable<string> DrawableObject { get; set; }
+        public CoordinatePair<int, int> CoordinatePair { get; set; }
 
-        }
+        public abstract void InjectWalls(Drawable<Wall> walls);
+        public abstract void InjectPlayer(Drawable<Player> player);
+        //public abstract void InjectApples(Drawable<Apple>[] apples);
+        //public abstract void InjectEnemies(Drawable<Enemy>[] enemies);
+        public abstract void RenderField(PlayField playfield);
     }
 }

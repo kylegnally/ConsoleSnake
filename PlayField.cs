@@ -28,7 +28,7 @@ namespace ConsoleSnake
             Height = Int32.Parse(input[2]);
             PlayerStartX = Int32.Parse(input[3]);
             PlayerStartY = Int32.Parse(input[4]);
-            Renderer
+            FieldRenderer fieldRenderer = new FieldRenderer();
         }
 
         protected PlayField() { }

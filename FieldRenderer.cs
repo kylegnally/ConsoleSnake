@@ -8,6 +8,8 @@ namespace ConsoleSnake
 {
     class FieldRenderer : Renderer
     {
-        // code used to render the elements on the field alone
+        private Drawable<Wall>[] _walls;
+        private Drawable<Player> _player;
+        private 
     }
 }
