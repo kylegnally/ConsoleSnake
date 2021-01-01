@@ -6,8 +6,18 @@ using System.Threading.Tasks;
 
 namespace ConsoleSnake
 {
-    class Enemy
+    class Enemy : Drawable<string>
     {
-        // enemy code. May want additional class for enemy AI (if implemented)
+        private string _enemyString = "x ";
+        private CoordinatePair<int, int> _coordinatePair;
+
+        public string AnEnemy { get; }
+        public CoordinatePair<int, int> EnemyCoordinatePair { get; set; }
+
+        public Enemy(CoordinatePair<int, int> coords)
+        {
+            AnEnemy = _enemyString;
+            EnemyCoordinatePair = coords;
+        }
     }
 }

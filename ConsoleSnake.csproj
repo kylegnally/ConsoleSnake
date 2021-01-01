@@ -45,11 +45,14 @@
   <ItemGroup>
     <Compile Include="Apple.cs" />
     <Compile Include="Coord.cs" />
+    <Compile Include="CoordinatePair.cs" />
     <Compile Include="Direction.cs" />
+    <Compile Include="Drawable.cs" />
     <Compile Include="Enemy.cs" />
     <Compile Include="FieldRenderer.cs" />
     <Compile Include="Input.cs" />
     <Compile Include="MoverRenderer.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Renderer.cs" />
     <Compile Include="Snake.cs" />
     <Compile Include="Program.cs" />
@@ -57,9 +60,11 @@
     <Compile Include="PlayField.cs" />
     <Compile Include="SnakeGame.cs" />
     <Compile Include="UserInterface.cs" />
+    <Compile Include="Wall.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

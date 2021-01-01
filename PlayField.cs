@@ -9,7 +9,6 @@ namespace ConsoleSnake
     class PlayField : SnakeGame
     {
         private readonly Random _random = new Random();
-        private FieldRenderer _renderer = new FieldRenderer();
 
         public int Height { get; set; }
         public int Width { get; set; }
@@ -29,6 +28,7 @@ namespace ConsoleSnake
             Height = Int32.Parse(input[2]);
             PlayerStartX = Int32.Parse(input[3]);
             PlayerStartY = Int32.Parse(input[4]);
+            Renderer
         }
 
         protected PlayField() { }

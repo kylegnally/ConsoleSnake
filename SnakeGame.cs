@@ -10,7 +10,7 @@ namespace ConsoleSnake
 {
     public class SnakeGame
     {
-        public List<Coord> TailCoordsList;
+        //private List<CoordinatePair<int, int>> _tailCoordsList;
 
         //private bool WasAppleEaten { get; set; }
         //private bool GameIsPlaying { get; set; }
@@ -23,6 +23,7 @@ namespace ConsoleSnake
         private Snake Player { get; set; }
         private PlayField Playfield { get; set; }
         private Renderer Renderer { get; set; }
+
         //private Stopwatch Tick { get; set; }
 
         public SnakeGame()
@@ -51,7 +52,8 @@ namespace ConsoleSnake
 
             PlayField aPlayfield = new PlayField(userInput);
 
-        }
+
+    }
 
         private void OnKeyDown()
         {
