@@ -14,23 +14,29 @@ namespace ConsoleSnake
         public int Height { get; set; }
         public int Width { get; set; }
 
-        public PlayField(List<Coord> tailCoords)
-        {
-           
-        }
+        public int PlayerStartX { get; set; }
+        public int PlayerStartY { get; set; }
 
-        public PlayField(int height, int width)
+
+        //public PlayField(List<Coord> tailCoords)
+        //{
+
+        //}
+
+        public PlayField(string[] input)
         {
-            Height = height;
-            Width = width;
+            Width = Int32.Parse(input[1]);
+            Height = Int32.Parse(input[2]);
+            PlayerStartX = Int32.Parse(input[3]);
+            PlayerStartY = Int32.Parse(input[4]);
         }
 
         protected PlayField() { }
 
-        public void SetSnakeField(List<Coord> tailCoords)
-        {            
-            Height = Console.WindowHeight;
-            Width = Console.WindowWidth;
-        }
+        //public void SetSnakeField(List<Coord> tailCoords)
+        //{            
+        //    Height = Console.WindowHeight;
+        //    Width = Console.WindowWidth;
+        //}
     }
 }

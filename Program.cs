@@ -10,8 +10,7 @@ namespace ConsoleSnake
     {
         static void Main(string[] args)
         {
-            SnakeGame game;
-
+            SnakeGame game = new SnakeGame(); 
         }
     }
 }

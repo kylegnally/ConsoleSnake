@@ -8,5 +8,6 @@ namespace ConsoleSnake
 {
     class Enemy
     {
+        // enemy code. May want additional class for enemy AI (if implemented)
     }
 }

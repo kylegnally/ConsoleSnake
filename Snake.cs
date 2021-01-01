@@ -8,5 +8,6 @@ namespace ConsoleSnake
 {
     class Snake : SnakeGame
     {
+        // code for our snaaaaake
     }
 }

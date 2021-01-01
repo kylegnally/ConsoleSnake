@@ -8,5 +8,6 @@ namespace ConsoleSnake
 {
     class Input : SnakeGame
     {
+        // code to handle non-UI game input
     }
 }

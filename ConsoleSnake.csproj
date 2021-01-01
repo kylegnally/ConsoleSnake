@@ -48,14 +48,15 @@
     <Compile Include="Direction.cs" />
     <Compile Include="Enemy.cs" />
     <Compile Include="FieldRenderer.cs" />
-    <Compile Include="GameRenderer.cs" />
     <Compile Include="Input.cs" />
+    <Compile Include="MoverRenderer.cs" />
     <Compile Include="Renderer.cs" />
     <Compile Include="Snake.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PlayField.cs" />
     <Compile Include="SnakeGame.cs" />
+    <Compile Include="UserInterface.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

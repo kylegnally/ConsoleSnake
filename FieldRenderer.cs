@@ -8,5 +8,6 @@ namespace ConsoleSnake
 {
     class FieldRenderer : Renderer
     {
+        // code used to render the elements on the field alone
     }
 }

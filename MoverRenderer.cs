@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleSnake
 {
-    class GameRenderer : Renderer
+    class MoverRenderer : Renderer
     {
     }
 }
